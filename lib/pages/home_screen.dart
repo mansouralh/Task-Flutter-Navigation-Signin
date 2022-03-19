@@ -60,7 +60,7 @@ class HomeScreen extends StatelessWidget {
             onPressed: () {
               if (passwordController.text == "12345") {
                 GoRouter.of(context)
-                    .push('/signin', extra: usernameController.text);
+                    .go('/signin', extra: usernameController.text);
               }
             },
             child: const Padding(
